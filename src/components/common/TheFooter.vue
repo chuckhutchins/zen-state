@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <p class="copyright">
-      Made with 💀
+      Made with 😌
     </p>
   </footer>
 </template>
@@ -17,7 +17,7 @@
 
   .copyright {
     line-height: 1;
-    text-align: center;
+    text-align: end;
   }
 }
 </style>

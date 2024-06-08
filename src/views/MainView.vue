@@ -8,6 +8,7 @@
       <ul class="list">
         <li>Breathe in</li>
         <li>Breathe out</li>
+        <li><router-link :to="{name: 'MeditationPage'}">Guided</router-link></li>
       </ul>
     </div>
   </main>

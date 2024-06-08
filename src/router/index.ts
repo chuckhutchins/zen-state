@@ -16,6 +16,11 @@ const router = createRouter({
       name: 'HomePage',
       component: MainView,
     },
+    {
+      path: '/meditation',
+      name: 'MeditationPage',
+      component: () => import('@/views/MeditationView.vue'),
+    },
   ],
 });
 
