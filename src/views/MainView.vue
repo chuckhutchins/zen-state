@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <div class="mission">
-      <h1>Just calm yourself already.</h1>
+      <h1>You need to calm down. You're being too loud.</h1>
     </div>
     <TheHr />
     <div class="meditations">
@@ -34,7 +34,7 @@ import TheHr from '@/components/common/TheHr.vue';
     h1 {
       font-size: 2rem;
       line-height: 1.4;
-      text-shadow: 0 1px 2px var(--text-shadow);
+      text-shadow: 0 1px 1px var(--text-shadow);
     }
   }
 
