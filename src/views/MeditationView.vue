@@ -47,7 +47,7 @@ const handleChangeLength = (length: string) => {
   h1 {
     font-size: 2rem;
     line-height: 1.4;
-    text-shadow: 0 1px 2px var(--text-shadow);
+    text-shadow: 0 1px 1px var(--text-shadow);
   }
 
   .meditations {
