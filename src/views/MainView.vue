@@ -3,7 +3,7 @@
     <div class="mission">
       <h1>You need to calm down. You're being too loud.</h1>
     </div>
-    <TheHr />
+    <TheHr size="small" />
     <div class="meditations">
       <ul class="list">
         <li>Breathe in</li>

@@ -3,15 +3,22 @@
     <nav class="nav">
       <RouterLink :to="{name: 'HomePage'}" class="main">Zen State</RouterLink>
     </nav>
+    <TheHr />
   </header>
 </template>
 
-<script setup lang="ts" />
+<script setup lang="ts">
+import TheHr from '@/components/common/TheHr.vue';
+</script>
 
 <style scoped lang="scss">
 header {
-  border-block-end: 2px solid;
-  padding-block-end: 1rem;
+  display: grid;
+  gap: 1rem;
+
+  > * {
+    min-inline-size: 0;
+  }
 
   .nav {
     display: flex;

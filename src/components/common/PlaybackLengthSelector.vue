@@ -77,12 +77,13 @@ watch(length, () => {
   }
 
   .lengths {
+    --sand-shadow: rgba(200 135 55 / 0.3);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
     justify-content: start;
     gap: 0.25rem;
     background-color: var(--filter-background);
-    box-shadow: inset 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0.0625rem 0.25rem var(--sand-shadow);
     padding: 0.25rem;
     border-radius: 0.5rem;
 
@@ -92,7 +93,6 @@ watch(length, () => {
       transition: background-color 0.25s;
       text-align: center;
       font-size: 1rem;
-      //min-inline-size: 5rem;
 
       &:hover {
         cursor: pointer;
@@ -101,7 +101,7 @@ watch(length, () => {
 
       &.active {
         background-color: var(--filter-active);
-        box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0.0625rem 0.25rem var(--sand-shadow);
 
         &:focus-within {
           box-shadow: 0 0 0 0.125rem var(--text);

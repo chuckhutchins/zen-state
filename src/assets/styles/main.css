@@ -6,8 +6,10 @@
   --color-white: #f5f5f5;
   --fancy-blue: #43aeff;
   --color-sand-light: #efdcc5;
-  --color-sand-dark: #e8cdab;
+  --color-sand: #e8cdab;
+  --color-sand-dark: #deb787;
   --color-rock: #878787;
+  --color-rock-dark: #4d4d4d;
   /*--color-sand-dark: #d6ac7b;*/
 }
 
@@ -22,15 +24,15 @@
 
 
 html {
-  --text: var(--color-rock);
-  --stripes: var(--color-sand-dark);
+  --text: var(--color-rock-dark);
+  --stripes: var(--color-sand);
   --visited: var(--color-dark-gray);
   --bg: var(--color-sand-light);
   --bg-image: url('@/assets/images/bg-sand-transparent.png');
   --text-shadow: rgba(0, 0, 0, 0.5);
-  --filter-background: var(--color-light-gray);
-  --filter-active: var(--color-white);
-  --filter-hover: var(--color-gray);
+  --filter-background: var(--color-sand);
+  --filter-active: var(--color-sand-light);
+  --filter-hover: var(--color-sand-dark);
   background-color: var(--bg);
   font-size: 18px;
 }
