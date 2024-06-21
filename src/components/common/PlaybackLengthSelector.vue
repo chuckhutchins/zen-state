@@ -1,6 +1,6 @@
 <template>
   <div class="playback-length-selector">
-    <h2 id="playback-length">Filter By Rating</h2>
+    <h2 id="playback-length">Playback Length</h2>
     <div
       aria-labelledby="playback-length"
       role="radiogroup"
@@ -77,8 +77,9 @@ watch(length, () => {
   }
 
   .lengths {
-    justify-self: start;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+    justify-content: start;
     gap: 0.25rem;
     background-color: var(--filter-background);
     box-shadow: inset 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.1);
@@ -86,14 +87,12 @@ watch(length, () => {
     border-radius: 0.5rem;
 
     label {
-      display: flex;
-      justify-content: center;
       padding: 0.25rem;
       border-radius: 0.25rem;
       transition: background-color 0.25s;
       text-align: center;
       font-size: 1rem;
-      min-inline-size: 5rem;
+      //min-inline-size: 5rem;
 
       &:hover {
         cursor: pointer;
@@ -107,10 +106,6 @@ watch(length, () => {
         &:focus-within {
           box-shadow: 0 0 0 0.125rem var(--text);
         }
-      }
-
-      svg {
-        inline-size: 1rem;
       }
     }
   }
