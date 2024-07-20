@@ -17,11 +17,6 @@ const router = createRouter({
       component: MainView,
     },
     {
-      path: '/meditation',
-      name: 'MeditationPage',
-      component: () => import('@/views/MeditationView.vue'),
-    },
-    {
       path: '/:typeId',
       name: 'TypePage',
       component: () => import('@/views/TypeView.vue'),
