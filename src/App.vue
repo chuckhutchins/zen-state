@@ -7,8 +7,14 @@
 </template>
 
 <script setup lang="ts">
+import { onBeforeMount } from 'vue';
+import { useMeditationStore } from '@/stores/MeditationStore';
 import TheFooter from '@/components/common/TheFooter.vue';
 import TheHeader from '@/components/common/TheHeader.vue';
+
+onBeforeMount(() => {
+  useMeditationStore().getMeditationList();
+});
 </script>
 
 <style scoped lang="scss">
