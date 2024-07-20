@@ -57,7 +57,7 @@ const isActive = (file: number) => meditation.value === file;
 
 const generateSelectionId = (file: number) => `file-${file}`;
 
-const meditation = ref(10);
+const meditation = ref(fileList[0]);
 const meditationUrl = computed(() => `/media/${typeId}/${categoryId}/${focusId}/${meditation.value}.mp3`);
 
 // TODO: figure out nicer styles for desktop
