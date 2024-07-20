@@ -1,7 +1,7 @@
 export const meditations = [
   {
     id: 'singles',
-    type: 'Singles',
+    name: 'Singles',
     categoryList: [
       {
         id: 'classics',
@@ -19,11 +19,21 @@ export const meditations = [
           },
         ],
       },
+      {
+        id: 'sos',
+        name: 'SOS',
+        focusList: [],
+      },
+      {
+        id: 'good-morning',
+        name: 'Good Morning',
+        focusList: [],
+      },
     ],
   },
   {
     id: 'courses',
-    type: 'Courses',
+    name: 'Courses',
     categoryList: [
       {
         id: 'foundation',
@@ -62,7 +72,32 @@ export const meditations = [
             ]
           },
         ]
-      }
-    ]
-  }
+      },
+      {
+        id: 'health',
+        name: 'Health',
+        focusList: [],
+      },
+      {
+        id: 'brave',
+        name: 'Brave',
+        focusList: [],
+      },
+      {
+        id: 'happiness',
+        name: 'Happiness',
+        focusList: [],
+      },
+      {
+        id: 'work-and-performance',
+        name: 'Work and Performance',
+        focusList: [],
+      },
+      {
+        id: 'students',
+        name: 'Students',
+        focusList: [],
+      },
+    ],
+  },
 ];
