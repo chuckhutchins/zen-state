@@ -21,6 +21,21 @@ const router = createRouter({
       name: 'MeditationPage',
       component: () => import('@/views/MeditationView.vue'),
     },
+    {
+      path: '/:typeId',
+      name: 'TypePage',
+      component: () => import('@/views/TypeView.vue'),
+    },
+    {
+      path: '/:typeId/:categoryId',
+      name: 'CategoryPage',
+      component: () => import('@/views/CategoryView.vue'),
+    },
+    {
+      path: '/:typeId/:categoryId/:focusId',
+      name: 'FocusPage',
+      component: () => import('@/views/FocusView.vue'),
+    },
   ],
 });
 
