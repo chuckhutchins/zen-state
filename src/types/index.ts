@@ -1,6 +1,6 @@
 export type MeditationType = {
   id: string;
-  type: string;
+  name: string;
   categoryList: CategoryType[];
 };
 
