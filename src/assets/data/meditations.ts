@@ -1,11 +1,14 @@
 export const meditations = [
   {
+    id: 'singles',
     type: 'Singles',
     categoryList: [
       {
+        id: 'classics',
         name: 'Classics',
         focusList: [
           {
+            id: 'guided',
             name: 'Guided',
             fileList: [
               10,
@@ -19,12 +22,15 @@ export const meditations = [
     ],
   },
   {
+    id: 'courses',
     type: 'Courses',
     categoryList: [
       {
+        id: 'foundation',
         name: 'Foundation',
         focusList: [
           {
+            id: 'basics-01',
             name: 'Basics',
             fileList: [
               1,
@@ -40,6 +46,7 @@ export const meditations = [
             ]
           },
           {
+            id: 'basics-02',
             name: 'Basics 2',
             fileList: [
               1,
