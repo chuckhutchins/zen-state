@@ -18,15 +18,8 @@
       </div>
       <TheHr size="small" />
       <div>
-        <ul>
-          <li>fix breadcrumb to show focus</li>
-          <li>generate list of individual meditations</li>
-          <li>pull those in based on the path</li>
-        </ul>
-      </div>
-      <div>
         <h1>{{ focusName }}</h1>
-        <p>{{ fileList }}</p>
+        <TheMeditation :fileList="fileList" />
       </div>
     </template>
     <template v-else>
@@ -43,6 +36,7 @@ import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import { useMeditationStore } from '@/stores/MeditationStore';
 import TheHr from '@/components/common/TheHr.vue';
+import TheMeditation from '@/components/meditation/TheMeditation.vue';
 
 const { typeId, categoryId, focusId } = useRoute().params;
 const meditationStore = useMeditationStore();
