@@ -62,6 +62,10 @@ const meditationUrl = computed(() => `/media/${typeId}/${categoryId}/${focusId}/
 
 // TODO: figure out nicer styles for desktop
 // TODO: probably center the audio player and have a good max width
+// TODO: persist meditation selection in indexeddb
+// TODO: keep screen awake
+// TODO: figure out an audio player style
+// TODO: look into a simple, calming animation
 </script>
 
 <style scoped lang="scss">

@@ -19,6 +19,9 @@ import TheHr from '@/components/common/TheHr.vue';
 
 const meditationStore = useMeditationStore();
 const { meditationList } = storeToRefs(meditationStore);
+
+// TODO: change mission to look like a rock zen garden
+// TODO: change mission text on refresh
 </script>
 
 <style scoped lang="scss">
