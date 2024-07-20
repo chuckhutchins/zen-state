@@ -51,7 +51,7 @@ const categoryName = computed(() => {
   return category?.name;
 });
 
-const hasFocus = computed(() => !!focus);
+const hasFocus = computed(() => !!focus.value);
 const focus = computed(() => meditationStore.getFocus(typeId, categoryId, focusId));
 const focusName = computed(() => focus.value?.name);
 

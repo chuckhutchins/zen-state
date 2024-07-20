@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useMeditationStore } from "@/stores/MeditationStore.js";
+import { useMeditationStore } from '@/stores/MeditationStore.js';
 import CategoryItem from '@/components/category/CategoryItem.vue';
 
 const meditationStore = useMeditationStore();

@@ -9,8 +9,9 @@
       >
         <label
           v-for="file in fileList"
-          :for="generateSelectionId(file)"
           :class="{ 'active': isActive(file) }"
+          :for="generateSelectionId(file)"
+          :key="file"
         >
           <template v-if="isCourse">
             Day {{ file }}

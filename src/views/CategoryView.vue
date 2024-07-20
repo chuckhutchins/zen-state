@@ -42,7 +42,7 @@ const typeName = computed(() => {
   return type?.name;
 });
 
-const hasCategory = computed(() => !!category);
+const hasCategory = computed(() => !!category.value);
 const category = computed(() => meditationStore.getCategory(typeId, categoryId));
 const categoryName = computed(() => category.value?.name);
 

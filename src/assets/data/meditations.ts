@@ -53,7 +53,7 @@ export const meditations = [
               8,
               9,
               10,
-            ]
+            ],
           },
           {
             id: 'basics-02',
@@ -69,9 +69,9 @@ export const meditations = [
               8,
               9,
               10,
-            ]
+            ],
           },
-        ]
+        ],
       },
       {
         id: 'health',

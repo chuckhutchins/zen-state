@@ -31,7 +31,7 @@ import TheHr from '@/components/common/TheHr.vue';
 const { typeId } = useRoute().params;
 const meditationStore = useMeditationStore();
 
-const hasType = computed(() => !!type);
+const hasType = computed(() => !!type.value);
 const type = computed(() => meditationStore.getType(typeId));
 const typeName = computed(() => type.value?.name);
 </script>
